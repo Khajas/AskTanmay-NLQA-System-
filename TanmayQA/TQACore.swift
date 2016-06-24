@@ -20,7 +20,7 @@ class TQACore {
     
     init(userQuery: String) {
         print("You asked: \(userQuery)")
-        self.userQuery = userQuery.lowercaseString
+        self.userQuery = userQuery.lowercased()
         answers = []
         runATD()
         runSATD()

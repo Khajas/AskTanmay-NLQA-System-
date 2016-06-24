@@ -8,7 +8,7 @@
 
 import Foundation
 
-system("clear")
+// include terminal clear screen (system() is no longer available in swift 3)
 
 print("+------------------------------------------+")
 print("|                                          |")

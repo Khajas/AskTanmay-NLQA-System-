@@ -7,27 +7,27 @@ provides-member:
 - ["C8TanmayQA8RunShell", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- !private "NSPipe"
+- !private "FileHandle"
+- "RunShell"
+- !private "Task"
 - "NSString"
 - "String"
-- !private "NSFileHandle"
-- !private "NSUTF8StringEncoding"
-- "RunShell"
+- !private "StringLiteralType"
 - !private "Array"
-- !private "NSTask"
+- !private "Pipe"
 depends-member:
-- !private ["Ps9AnyObject", "NSFileHandle"]
-- !private ["Ps9AnyObject", "NSPipe"]
+- !private ["Ps9AnyObject", "Encoding"]
+- !private ["Ps9AnyObject", "FileHandle"]
 - !private ["Ps9AnyObject", "NSString"]
-- !private ["Ps9AnyObject", "NSTask"]
-- !private ["Ps9AnyObject", "NSUTF8StringEncoding"]
+- !private ["Ps9AnyObject", "Pipe"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "Task"]
 - !private ["Ps9AnyObject", "arguments"]
 - !private ["Ps9AnyObject", "fileHandleForReading"]
-- !private ["Ps9AnyObject", "fileHandleWithNullDevice"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "launch"]
 - !private ["Ps9AnyObject", "launchPath"]
+- !private ["Ps9AnyObject", "nullDevice"]
 - !private ["Ps9AnyObject", "readDataToEndOfFile"]
 - !private ["Ps9AnyObject", "standardError"]
 - !private ["Ps9AnyObject", "standardOutput"]
@@ -36,180 +36,242 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "Element"]
-- !private ["Ps11CVarArgType", "arguments"]
-- !private ["Ps11CVarArgType", "fileHandleForReading"]
-- !private ["Ps11CVarArgType", "fileHandleWithNullDevice"]
-- !private ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "launch"]
-- !private ["Ps11CVarArgType", "launchPath"]
-- !private ["Ps11CVarArgType", "readDataToEndOfFile"]
-- !private ["Ps11CVarArgType", "standardError"]
-- !private ["Ps11CVarArgType", "standardOutput"]
-- !private ["Ps11CVarArgType", "terminationStatus"]
-- !private ["Ps11CVarArgType", "waitUntilExit"]
-- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
+- !private ["Ps7CVarArg", "Encoding"]
+- !private ["Ps7CVarArg", "arguments"]
+- !private ["Ps7CVarArg", "fileHandleForReading"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "launch"]
+- !private ["Ps7CVarArg", "launchPath"]
+- !private ["Ps7CVarArg", "nullDevice"]
+- !private ["Ps7CVarArg", "readDataToEndOfFile"]
+- !private ["Ps7CVarArg", "standardError"]
+- !private ["Ps7CVarArg", "standardOutput"]
+- !private ["Ps7CVarArg", "terminationStatus"]
+- !private ["Ps7CVarArg", "waitUntilExit"]
+- !private ["Ps10Collection", "Element"]
+- !private ["Ps10Comparable", "Encoding"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
-- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "Encoding"]
 - !private ["Ps28CustomDebugStringConvertible", "arguments"]
 - !private ["Ps28CustomDebugStringConvertible", "fileHandleForReading"]
-- !private ["Ps28CustomDebugStringConvertible", "fileHandleWithNullDevice"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "launch"]
 - !private ["Ps28CustomDebugStringConvertible", "launchPath"]
+- !private ["Ps28CustomDebugStringConvertible", "nullDevice"]
 - !private ["Ps28CustomDebugStringConvertible", "readDataToEndOfFile"]
+- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "standardError"]
 - !private ["Ps28CustomDebugStringConvertible", "standardOutput"]
 - !private ["Ps28CustomDebugStringConvertible", "terminationStatus"]
 - !private ["Ps28CustomDebugStringConvertible", "waitUntilExit"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "Encoding"]
+- ["Ps17CustomReflectable", "some"]
 - !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Encoding"]
 - !private ["Ps23CustomStringConvertible", "arguments"]
 - !private ["Ps23CustomStringConvertible", "fileHandleForReading"]
-- !private ["Ps23CustomStringConvertible", "fileHandleWithNullDevice"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "launch"]
 - !private ["Ps23CustomStringConvertible", "launchPath"]
+- !private ["Ps23CustomStringConvertible", "nullDevice"]
+- !private ["Ps23CustomStringConvertible", "rawValue"]
 - !private ["Ps23CustomStringConvertible", "readDataToEndOfFile"]
 - !private ["Ps23CustomStringConvertible", "standardError"]
 - !private ["Ps23CustomStringConvertible", "standardOutput"]
 - !private ["Ps23CustomStringConvertible", "terminationStatus"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
 - !private ["Ps23CustomStringConvertible", "waitUntilExit"]
+- !private ["VE10FoundationSS8Encoding", "rawValue"]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- !private ["Ps9Equatable", "Encoding"]
 - !private ["Ps9Equatable", "arguments"]
 - !private ["Ps9Equatable", "fileHandleForReading"]
-- !private ["Ps9Equatable", "fileHandleWithNullDevice"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "launch"]
 - !private ["Ps9Equatable", "launchPath"]
+- !private ["Ps9Equatable", "nullDevice"]
+- !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "readDataToEndOfFile"]
 - !private ["Ps9Equatable", "standardError"]
 - !private ["Ps9Equatable", "standardOutput"]
 - !private ["Ps9Equatable", "terminationStatus"]
+- !private ["Ps9Equatable", "utf8"]
 - !private ["Ps9Equatable", "waitUntilExit"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "Encoding"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo10FileHandle", "nullDevice"]
+- !private ["CSo10FileHandle", "readDataToEndOfFile"]
+- !private ["Ps8Hashable", "Encoding"]
 - !private ["Ps8Hashable", "arguments"]
 - !private ["Ps8Hashable", "fileHandleForReading"]
-- !private ["Ps8Hashable", "fileHandleWithNullDevice"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "launch"]
 - !private ["Ps8Hashable", "launchPath"]
+- !private ["Ps8Hashable", "nullDevice"]
+- !private ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "readDataToEndOfFile"]
 - !private ["Ps8Hashable", "standardError"]
 - !private ["Ps8Hashable", "standardOutput"]
 - !private ["Ps8Hashable", "terminationStatus"]
+- !private ["Ps8Hashable", "utf8"]
 - !private ["Ps8Hashable", "waitUntilExit"]
 - !private ["Ps9Indexable", "Element"]
-- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps13IndexableBase", "Element"]
+- !private ["Ps10MirrorPath", "Encoding"]
+- !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps16MutableIndexable", "Element"]
-- !private ["Ps16MutableSliceable", "Element"]
-- !private ["PSo8NSCoding", "fileHandleWithNullDevice"]
+- !private ["PSo8NSCoding", "Encoding"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "nullDevice"]
 - !private ["PSo8NSCoding", "readDataToEndOfFile"]
+- !private ["PSo9NSCopying", "Encoding"]
 - !private ["PSo9NSCopying", "init"]
-- !private ["CSo12NSFileHandle", "fileHandleWithNullDevice"]
-- !private ["CSo12NSFileHandle", "readDataToEndOfFile"]
+- !private ["PSo16NSMutableCopying", "Encoding"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Encoding"]
 - !private ["CSo8NSObject", "arguments"]
 - !private ["CSo8NSObject", "fileHandleForReading"]
-- !private ["CSo8NSObject", "fileHandleWithNullDevice"]
 - !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "launch"]
 - !private ["CSo8NSObject", "launchPath"]
+- !private ["CSo8NSObject", "nullDevice"]
 - !private ["CSo8NSObject", "readDataToEndOfFile"]
 - !private ["CSo8NSObject", "standardError"]
 - !private ["CSo8NSObject", "standardOutput"]
 - !private ["CSo8NSObject", "terminationStatus"]
 - !private ["CSo8NSObject", "waitUntilExit"]
+- !private ["PSo16NSObjectProtocol", "Encoding"]
 - !private ["PSo16NSObjectProtocol", "arguments"]
 - !private ["PSo16NSObjectProtocol", "fileHandleForReading"]
-- !private ["PSo16NSObjectProtocol", "fileHandleWithNullDevice"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "launch"]
 - !private ["PSo16NSObjectProtocol", "launchPath"]
+- !private ["PSo16NSObjectProtocol", "nullDevice"]
 - !private ["PSo16NSObjectProtocol", "readDataToEndOfFile"]
 - !private ["PSo16NSObjectProtocol", "standardError"]
 - !private ["PSo16NSObjectProtocol", "standardOutput"]
 - !private ["PSo16NSObjectProtocol", "terminationStatus"]
 - !private ["PSo16NSObjectProtocol", "waitUntilExit"]
-- !private ["CSo6NSPipe", "fileHandleForReading"]
-- !private ["CSo6NSPipe", "init"]
-- !private ["PSo14NSSecureCoding", "fileHandleWithNullDevice"]
+- !private ["PSo14NSSecureCoding", "Encoding"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "nullDevice"]
 - !private ["PSo14NSSecureCoding", "readDataToEndOfFile"]
+- !private ["CSo8NSString", "Encoding"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
-- !private ["CSo6NSTask", "arguments"]
-- !private ["CSo6NSTask", "init"]
-- !private ["CSo6NSTask", "launch"]
-- !private ["CSo6NSTask", "launchPath"]
-- !private ["CSo6NSTask", "standardError"]
-- !private ["CSo6NSTask", "standardOutput"]
-- !private ["CSo6NSTask", "terminationStatus"]
-- !private ["CSo6NSTask", "waitUntilExit"]
-- ["Ps21NilLiteralConvertible", "Some"]
-- ["Sq", "Some"]
+- ["Ps21NilLiteralConvertible", "some"]
 - !private ["Sq", "deinit"]
-- !private ["Ps30RangeReplaceableCollectionType", "Element"]
-- !private ["C8TanmayQA8RunShell", "NSFileHandle"]
-- !private ["C8TanmayQA8RunShell", "NSPipe"]
+- ["Sq", "some"]
+- !private ["Ps12OutputStream", "Encoding"]
+- !private ["CSo4Pipe", "fileHandleForReading"]
+- !private ["CSo4Pipe", "init"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- !private ["C8TanmayQA8RunShell", "FileHandle"]
 - ["C8TanmayQA8RunShell", "NSString"]
-- !private ["C8TanmayQA8RunShell", "NSTask"]
-- !private ["C8TanmayQA8RunShell", "NSUTF8StringEncoding"]
+- !private ["C8TanmayQA8RunShell", "Pipe"]
 - ["C8TanmayQA8RunShell", "String"]
+- !private ["C8TanmayQA8RunShell", "Task"]
 - ["C8TanmayQA8RunShell", "deinit"]
 - ["C8TanmayQA8RunShell", "execcmd"]
 - ["C8TanmayQA8RunShell", "init"]
-- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps10Streamable", "Encoding"]
+- !private ["SS", "Encoding"]
+- ["SS", "deinit"]
+- !private ["Ps30StringInterpolationConvertible", "Encoding"]
+- !private ["Ps24StringLiteralConvertible", "Encoding"]
 - !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["CSo4Task", "arguments"]
+- !private ["CSo4Task", "init"]
+- !private ["CSo4Task", "launch"]
+- !private ["CSo4Task", "launchPath"]
+- !private ["CSo4Task", "standardError"]
+- !private ["CSo4Task", "standardOutput"]
+- !private ["CSo4Task", "terminationStatus"]
+- !private ["CSo4Task", "waitUntilExit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "Encoding"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
-- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps14_ArrayProtocol", "Element"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "Encoding"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "Encoding"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "Encoding"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "Encoding"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
-- !private ["Ps12_Reflectable", "Element"]
-- ["Ps12_Reflectable", "Some"]
-- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
-- !private "Ps11CVarArgType"
-- !private "Ps14CollectionType"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
+- !private "VE10FoundationSS8Encoding"
 - !private "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo10FileHandle"
 - !private "Ps8Hashable"
 - !private "Ps9Indexable"
-- !private "Ps21MutableCollectionType"
+- !private "Ps13IndexableBase"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
-- !private "Ps16MutableSliceable"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "CSo12NSFileHandle"
 - !private "PSo16NSMutableCopying"
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
-- !private "CSo6NSPipe"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- !private "CSo6NSTask"
 - "Ps21NilLiteralConvertible"
 - "Sq"
-- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12OutputStream"
+- !private "CSo4Pipe"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
 - "C8TanmayQA8RunShell"
-- !private "Ps12SequenceType"
+- !private "Ps8Sequence"
+- !private "Ps10Streamable"
+- "SS"
+- !private "Ps30StringInterpolationConvertible"
 - !private "Ps24StringLiteralConvertible"
+- !private "CSo4Task"
 - !private "Ps31UnicodeScalarLiteralConvertible"
-- !private "Ps10_ArrayType"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps21_ObjectiveCBridgeable"
-- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
-- "/Volumes/External HD/TanmayQA/TanmayQA/TanmayQA-Bridging-Header.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-interface-hash: "a2dc20ee7ed60edd22d89040efc0a07d"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/tanmay/Github/AskTanmay/AskTanmay-swift-3/TanmayQA/TanmayQA-Bridging-Header.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+interface-hash: "7dc3bf96af65998618bd30a8b750e4c5"

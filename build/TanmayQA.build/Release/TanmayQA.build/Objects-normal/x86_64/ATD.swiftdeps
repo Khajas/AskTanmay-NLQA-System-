@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "ATD_CLASSIFIER_PW"
-- "ATDEngine"
-- !private "ATD_CLASSIFIER_ID"
 - !private "ATD_CLASSIFIER_UN"
 - "String"
+- !private "ATD_CLASSIFIER_ID"
 - !private "NLCHandler"
+- "ATDEngine"
 depends-member:
 - !private ["C8TanmayQA9ATDEngine", "ATD_CLASSIFIER_ID"]
 - !private ["C8TanmayQA9ATDEngine", "ATD_CLASSIFIER_PW"]
@@ -30,48 +30,51 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "question"]
 - !private ["Ps9AnyObject", "runHandler"]
-- !private ["Ps9AnyObject", "uppercaseString"]
+- !private ["Ps9AnyObject", "uppercased"]
 - ["Ps9AnyObject", ""]
-- !private ["Ps11CVarArgType", "uppercaseString"]
-- !private ["Ps10Comparable", "uppercaseString"]
-- !private ["Ps28CustomDebugStringConvertible", "uppercaseString"]
-- !private ["Ps23CustomStringConvertible", "uppercaseString"]
-- !private ["Ps9Equatable", "uppercaseString"]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "uppercaseString"]
-- !private ["Ps8Hashable", "uppercaseString"]
-- !private ["Ps14MirrorPathType", "uppercaseString"]
+- !private ["Ps7CVarArg", "uppercased"]
+- !private ["Ps10Comparable", "uppercased"]
+- !private ["Ps28CustomDebugStringConvertible", "uppercased"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "uppercased"]
+- !private ["Ps17CustomReflectable", "uppercased"]
+- !private ["Ps23CustomStringConvertible", "uppercased"]
+- !private ["Ps9Equatable", "uppercased"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "uppercased"]
+- !private ["Ps8Hashable", "uppercased"]
+- !private ["Ps10MirrorPath", "uppercased"]
 - !private ["C8TanmayQA10NLCHandler", "init"]
 - !private ["C8TanmayQA10NLCHandler", "runHandler"]
-- !private ["PSo8NSCoding", "uppercaseString"]
-- !private ["PSo9NSCopying", "uppercaseString"]
-- !private ["PSo16NSMutableCopying", "uppercaseString"]
-- !private ["CSo8NSObject", "uppercaseString"]
-- !private ["PSo16NSObjectProtocol", "uppercaseString"]
-- !private ["PSo14NSSecureCoding", "uppercaseString"]
-- !private ["CSo8NSString", "uppercaseString"]
-- !private ["Ps16OutputStreamType", "uppercaseString"]
-- !private ["Ps10Streamable", "uppercaseString"]
-- !private ["SS", "uppercaseString"]
-- !private ["Ps30StringInterpolationConvertible", "uppercaseString"]
-- !private ["Ps24StringLiteralConvertible", "uppercaseString"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "uppercaseString"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "uppercaseString"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "uppercaseString"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "uppercaseString"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "uppercaseString"]
-- !private ["Ps21_ObjectiveCBridgeable", "uppercaseString"]
-- !private ["Ps12_Reflectable", "uppercaseString"]
+- !private ["PSo8NSCoding", "uppercased"]
+- !private ["PSo9NSCopying", "uppercased"]
+- !private ["PSo16NSMutableCopying", "uppercased"]
+- !private ["CSo8NSObject", "uppercased"]
+- !private ["PSo16NSObjectProtocol", "uppercased"]
+- !private ["PSo14NSSecureCoding", "uppercased"]
+- !private ["CSo8NSString", "uppercased"]
+- !private ["Ps12OutputStream", "uppercased"]
+- !private ["Ps10Streamable", "uppercased"]
+- !private ["SS", "uppercased"]
+- !private ["Ps30StringInterpolationConvertible", "uppercased"]
+- !private ["Ps24StringLiteralConvertible", "uppercased"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "uppercased"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "uppercased"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "uppercased"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "uppercased"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "uppercased"]
+- !private ["Ps21_ObjectiveCBridgeable", "uppercased"]
 depends-nominal:
 - "C8TanmayQA9ATDEngine"
 - "Ps9AnyObject"
-- !private "Ps11CVarArgType"
+- !private "Ps7CVarArg"
 - !private "Ps10Comparable"
 - !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
 - !private "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps8Hashable"
-- !private "Ps14MirrorPathType"
+- !private "Ps10MirrorPath"
 - !private "C8TanmayQA10NLCHandler"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -80,7 +83,7 @@ depends-nominal:
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- !private "Ps16OutputStreamType"
+- !private "Ps12OutputStream"
 - !private "Ps10Streamable"
 - !private "SS"
 - !private "Ps30StringInterpolationConvertible"
@@ -91,15 +94,15 @@ depends-nominal:
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"
-- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
-- "/Volumes/External HD/TanmayQA/TanmayQA/TanmayQA-Bridging-Header.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/tanmay/Github/AskTanmay/AskTanmay-swift-3/TanmayQA/TanmayQA-Bridging-Header.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 interface-hash: "57595b01197a33615a2a6b8d64b0c313"

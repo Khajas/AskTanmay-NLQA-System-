@@ -7,111 +7,149 @@ provides-member:
 - ["C8TanmayQA10CreateFile", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CreateFile"
-- !private "NSUTF8StringEncoding"
-- !private "NSString"
-- "String"
-- !private "NSFileManager"
 - !private "BooleanLiteralType"
+- "String"
+- "CreateFile"
+- !private "FileManager"
+- !private "NSString"
 depends-member:
-- !private ["Ps9AnyObject", "NSFileManager"]
-- !private ["Ps9AnyObject", "NSUTF8StringEncoding"]
+- !private ["Ps9AnyObject", "Encoding"]
+- !private ["Ps9AnyObject", "FileManager"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "appendingPathComponent"]
 - !private ["Ps9AnyObject", "contents"]
 - !private ["Ps9AnyObject", "currentDirectoryPath"]
-- !private ["Ps9AnyObject", "defaultManager"]
+- !private ["Ps9AnyObject", "default"]
 - !private ["Ps9AnyObject", "filename"]
-- !private ["Ps9AnyObject", "stringByAppendingPathComponent"]
-- !private ["Ps9AnyObject", "writeToFile"]
+- !private ["Ps9AnyObject", "write"]
 - ["Ps9AnyObject", ""]
-- !private ["Ps11CVarArgType", "currentDirectoryPath"]
-- !private ["Ps11CVarArgType", "defaultManager"]
-- !private ["Ps11CVarArgType", "stringByAppendingPathComponent"]
-- !private ["Ps11CVarArgType", "writeToFile"]
-- !private ["Ps10Comparable", "writeToFile"]
-- !private ["C8TanmayQA10CreateFile", "NSFileManager"]
+- !private ["Ps7CVarArg", "Encoding"]
+- !private ["Ps7CVarArg", "appendingPathComponent"]
+- !private ["Ps7CVarArg", "currentDirectoryPath"]
+- !private ["Ps7CVarArg", "default"]
+- !private ["Ps7CVarArg", "write"]
+- !private ["Ps10Comparable", "Encoding"]
+- !private ["Ps10Comparable", "write"]
+- !private ["C8TanmayQA10CreateFile", "FileManager"]
 - !private ["C8TanmayQA10CreateFile", "NSString"]
-- !private ["C8TanmayQA10CreateFile", "NSUTF8StringEncoding"]
 - ["C8TanmayQA10CreateFile", "String"]
 - ["C8TanmayQA10CreateFile", "contents"]
 - ["C8TanmayQA10CreateFile", "deinit"]
 - ["C8TanmayQA10CreateFile", "filename"]
 - ["C8TanmayQA10CreateFile", "init"]
 - ["C8TanmayQA10CreateFile", "writeFile"]
+- !private ["Ps28CustomDebugStringConvertible", "Encoding"]
+- !private ["Ps28CustomDebugStringConvertible", "appendingPathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "currentDirectoryPath"]
-- !private ["Ps28CustomDebugStringConvertible", "defaultManager"]
-- !private ["Ps28CustomDebugStringConvertible", "stringByAppendingPathComponent"]
-- !private ["Ps28CustomDebugStringConvertible", "writeToFile"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
+- !private ["Ps28CustomDebugStringConvertible", "write"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "appendingPathComponent"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "write"]
+- !private ["Ps17CustomReflectable", "Encoding"]
+- !private ["Ps17CustomReflectable", "write"]
+- !private ["Ps23CustomStringConvertible", "Encoding"]
+- !private ["Ps23CustomStringConvertible", "appendingPathComponent"]
 - !private ["Ps23CustomStringConvertible", "currentDirectoryPath"]
-- !private ["Ps23CustomStringConvertible", "defaultManager"]
-- !private ["Ps23CustomStringConvertible", "stringByAppendingPathComponent"]
-- !private ["Ps23CustomStringConvertible", "writeToFile"]
+- !private ["Ps23CustomStringConvertible", "default"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- !private ["Ps23CustomStringConvertible", "write"]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- !private ["Ps9Equatable", "Encoding"]
+- !private ["Ps9Equatable", "appendingPathComponent"]
 - !private ["Ps9Equatable", "currentDirectoryPath"]
-- !private ["Ps9Equatable", "defaultManager"]
-- !private ["Ps9Equatable", "stringByAppendingPathComponent"]
-- !private ["Ps9Equatable", "writeToFile"]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByAppendingPathComponent"]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "writeToFile"]
+- !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "utf8"]
+- !private ["Ps9Equatable", "write"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "Encoding"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "appendingPathComponent"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "write"]
+- !private ["CSo11FileManager", "currentDirectoryPath"]
+- !private ["CSo11FileManager", "default"]
+- !private ["Ps8Hashable", "Encoding"]
+- !private ["Ps8Hashable", "appendingPathComponent"]
 - !private ["Ps8Hashable", "currentDirectoryPath"]
-- !private ["Ps8Hashable", "defaultManager"]
-- !private ["Ps8Hashable", "stringByAppendingPathComponent"]
-- !private ["Ps8Hashable", "writeToFile"]
-- !private ["Ps14MirrorPathType", "writeToFile"]
-- !private ["PSo8NSCoding", "stringByAppendingPathComponent"]
-- !private ["PSo8NSCoding", "writeToFile"]
-- !private ["PSo9NSCopying", "stringByAppendingPathComponent"]
-- !private ["PSo9NSCopying", "writeToFile"]
-- !private ["CSo13NSFileManager", "currentDirectoryPath"]
-- !private ["CSo13NSFileManager", "defaultManager"]
-- !private ["PSo16NSMutableCopying", "stringByAppendingPathComponent"]
-- !private ["PSo16NSMutableCopying", "writeToFile"]
+- !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "utf8"]
+- !private ["Ps8Hashable", "write"]
+- !private ["Ps10MirrorPath", "Encoding"]
+- !private ["Ps10MirrorPath", "write"]
+- !private ["PSo8NSCoding", "Encoding"]
+- !private ["PSo8NSCoding", "appendingPathComponent"]
+- !private ["PSo8NSCoding", "write"]
+- !private ["PSo9NSCopying", "Encoding"]
+- !private ["PSo9NSCopying", "appendingPathComponent"]
+- !private ["PSo9NSCopying", "write"]
+- !private ["PSo16NSMutableCopying", "Encoding"]
+- !private ["PSo16NSMutableCopying", "appendingPathComponent"]
+- !private ["PSo16NSMutableCopying", "write"]
+- !private ["CSo8NSObject", "Encoding"]
+- !private ["CSo8NSObject", "appendingPathComponent"]
 - !private ["CSo8NSObject", "currentDirectoryPath"]
-- !private ["CSo8NSObject", "defaultManager"]
-- !private ["CSo8NSObject", "stringByAppendingPathComponent"]
-- !private ["CSo8NSObject", "writeToFile"]
+- !private ["CSo8NSObject", "default"]
+- !private ["CSo8NSObject", "write"]
+- !private ["PSo16NSObjectProtocol", "Encoding"]
+- !private ["PSo16NSObjectProtocol", "appendingPathComponent"]
 - !private ["PSo16NSObjectProtocol", "currentDirectoryPath"]
-- !private ["PSo16NSObjectProtocol", "defaultManager"]
-- !private ["PSo16NSObjectProtocol", "stringByAppendingPathComponent"]
-- !private ["PSo16NSObjectProtocol", "writeToFile"]
-- !private ["PSo14NSSecureCoding", "stringByAppendingPathComponent"]
-- !private ["PSo14NSSecureCoding", "writeToFile"]
-- !private ["CSo8NSString", "stringByAppendingPathComponent"]
-- !private ["CSo8NSString", "writeToFile"]
-- !private ["Ps16OutputStreamType", "writeToFile"]
-- !private ["Ps10Streamable", "writeToFile"]
+- !private ["PSo16NSObjectProtocol", "default"]
+- !private ["PSo16NSObjectProtocol", "write"]
+- !private ["PSo14NSSecureCoding", "Encoding"]
+- !private ["PSo14NSSecureCoding", "appendingPathComponent"]
+- !private ["PSo14NSSecureCoding", "write"]
+- !private ["CSo8NSString", "Encoding"]
+- !private ["CSo8NSString", "appendingPathComponent"]
+- ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "write"]
+- !private ["Ps12OutputStream", "Encoding"]
+- !private ["Ps12OutputStream", "write"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- !private ["Ps10Streamable", "Encoding"]
+- !private ["Ps10Streamable", "write"]
+- !private ["SS", "Encoding"]
 - !private ["SS", "deinit"]
-- !private ["SS", "writeToFile"]
-- !private ["Ps30StringInterpolationConvertible", "writeToFile"]
-- !private ["Ps24StringLiteralConvertible", "stringByAppendingPathComponent"]
-- !private ["Ps24StringLiteralConvertible", "writeToFile"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "stringByAppendingPathComponent"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "writeToFile"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "writeToFile"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "writeToFile"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "writeToFile"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "writeToFile"]
-- !private ["Ps21_ObjectiveCBridgeable", "writeToFile"]
-- !private ["Ps12_Reflectable", "stringByAppendingPathComponent"]
-- !private ["Ps12_Reflectable", "writeToFile"]
+- !private ["SS", "write"]
+- !private ["Ps30StringInterpolationConvertible", "Encoding"]
+- !private ["Ps30StringInterpolationConvertible", "write"]
+- !private ["Ps24StringLiteralConvertible", "Encoding"]
+- !private ["Ps24StringLiteralConvertible", "appendingPathComponent"]
+- !private ["Ps24StringLiteralConvertible", "write"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "Encoding"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "appendingPathComponent"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "write"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "Encoding"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "write"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "Encoding"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "write"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "Encoding"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "write"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "Encoding"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "write"]
+- !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
+- !private ["Ps21_ObjectiveCBridgeable", "write"]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Ps11CVarArgType"
+- !private "Ps7CVarArg"
 - !private "Ps10Comparable"
 - "C8TanmayQA10CreateFile"
 - !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
+- !private "VE10FoundationSS8Encoding"
 - !private "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo11FileManager"
 - !private "Ps8Hashable"
-- !private "Ps14MirrorPathType"
+- !private "Ps10MirrorPath"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "CSo13NSFileManager"
 - !private "PSo16NSMutableCopying"
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
-- !private "Ps16OutputStreamType"
+- "CSo8NSString"
+- !private "Ps12OutputStream"
+- !private "Ps16RawRepresentable"
 - !private "Ps10Streamable"
 - !private "SS"
 - !private "Ps30StringInterpolationConvertible"
@@ -122,15 +160,15 @@ depends-nominal:
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"
-- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
-- "/Volumes/External HD/TanmayQA/TanmayQA/TanmayQA-Bridging-Header.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/tanmay/Github/AskTanmay/AskTanmay-swift-3/TanmayQA/TanmayQA-Bridging-Header.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 interface-hash: "c871b1ce0659720c5563f1515013fee6"

@@ -20,31 +20,33 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- "SERSE_RESULT_PAGES"
-- "CAG_NGRAMMINING_SCRIPTNAME"
-- "PYTHONBRIDGE_COMMAND"
-- "ATD_CLASSIFIER_PW"
 - "ATD_CLASSIFIER_UN"
-- "CAG_NGRAMMINING_SAVETO"
+- "StringLiteralType"
 - "ATD_CLASSIFIER_ID"
-- "FloatLiteralType"
-- "IntegerLiteralType"
-- "SATD_CLASSIFIER_PW"
-- "SERSE_GOOGLE_KEY"
-- "SATD_CLASSIFIERS"
-- "CAG_NGRAMMINING_LOADFROM"
-- "SATD_CLASSIFIER_UN"
-- "CAFS_NERFNS_CLASSNAME"
-- "JAVABRIDGE_COMMAND"
+- "CAG_NGRAMMINING_SCRIPTNAME"
+- "SERSE_RESULT_PAGES"
+- "PYTHONBRIDGE_COMMAND"
 - "CAFS_NERFNS_DEPENDENCY_JAR"
+- "ATD_CLASSIFIER_PW"
 - "Dictionary"
+- "FloatLiteralType"
+- "SATD_CLASSIFIERS"
+- "CAFS_NERFNS_CLASSNAME"
+- "SATD_CLASSIFIER_PW"
+- "SATD_CLASSIFIER_UN"
+- "CAG_NGRAMMINING_LOADFROM"
+- "IntegerLiteralType"
+- "CAG_NGRAMMINING_SAVETO"
 - "SERSE_GOOGLE_CX"
+- "JAVABRIDGE_COMMAND"
+- "SERSE_GOOGLE_KEY"
 depends-member:
-- ["Ps14CollectionType", "Key"]
-- ["Ps14CollectionType", "Value"]
+- ["Ps10Collection", "Key"]
+- ["Ps10Collection", "Value"]
 - ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "Value"]
+- ["Ps17CustomReflectable", "Key"]
+- ["Ps17CustomReflectable", "Value"]
 - ["Ps23CustomStringConvertible", "Key"]
 - ["Ps23CustomStringConvertible", "Value"]
 - ["Vs10Dictionary", "Key"]
@@ -53,30 +55,32 @@ depends-member:
 - ["Ps28DictionaryLiteralConvertible", "Value"]
 - ["Ps9Indexable", "Key"]
 - ["Ps9Indexable", "Value"]
-- ["Ps12SequenceType", "Key"]
-- ["Ps12SequenceType", "Value"]
+- ["Ps13IndexableBase", "Key"]
+- ["Ps13IndexableBase", "Value"]
+- ["Ps8Sequence", "Key"]
+- ["Ps8Sequence", "Value"]
 - ["Ps21_ObjectiveCBridgeable", "Key"]
 - ["Ps21_ObjectiveCBridgeable", "Value"]
-- ["Ps12_Reflectable", "Key"]
-- ["Ps12_Reflectable", "Value"]
 depends-nominal:
-- "Ps14CollectionType"
+- "Ps10Collection"
 - "Ps28CustomDebugStringConvertible"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Vs10Dictionary"
 - "Ps28DictionaryLiteralConvertible"
 - "Ps9Indexable"
-- "Ps12SequenceType"
+- "Ps13IndexableBase"
+- "Ps8Sequence"
 - "Ps21_ObjectiveCBridgeable"
-- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
-- "/Volumes/External HD/TanmayQA/TanmayQA/TanmayQA-Bridging-Header.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-interface-hash: "0c457233fb36c443816e0330415e9274"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/tanmay/Github/AskTanmay/AskTanmay-swift-3/TanmayQA/TanmayQA-Bridging-Header.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+interface-hash: "d88cd7cb578d33f6e22183e78dfd3558"
